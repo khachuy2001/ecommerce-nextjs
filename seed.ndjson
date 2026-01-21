@@ -1,0 +1,15 @@
+{"_id":"brand-apple","_type":"brand","name":"Apple"}
+{"_id":"brand-samsung","_type":"brand","name":"Samsung"}
+{"_id":"brand-panasonic","_type":"brand","name":"Panasonic"}
+{"_id":"brand-hitachi","_type":"brand","name":"Hitachi"}
+
+{"_id":"cat-phone","_type":"category","title":"Điện thoại","slug":{"_type":"slug","current":"dien-thoai"}}
+{"_id":"cat-appliance","_type":"category","title":"Thiết bị gia dụng","slug":{"_type":"slug","current":"thiet-bi-gia-dung"}}
+
+{"_type":"product","name":"iPhone 15 Pro Max","slug":{"_type":"slug","current":"iphone-15-pro-max"},"price":33990000,"discount":10,"stock":20,"variant":"gadget","brand":{"_type":"reference","_ref":"brand-apple"},"categories":[{"_type":"reference","_ref":"cat-phone"}]}
+
+{"_type":"product","name":"Samsung Galaxy S24 Ultra","slug":{"_type":"slug","current":"samsung-s24-ultra"},"price":32990000,"discount":12,"stock":15,"variant":"gadget","brand":{"_type":"reference","_ref":"brand-samsung"},"categories":[{"_type":"reference","_ref":"cat-phone"}]}
+
+{"_type":"product","name":"Panasonic Inverter Refrigerator","slug":{"_type":"slug","current":"panasonic-fridge"},"price":18990000,"discount":8,"stock":10,"variant":"refrigerators","brand":{"_type":"reference","_ref":"brand-panasonic"},"categories":[{"_type":"reference","_ref":"cat-appliance"}]}
+
+{"_type":"product","name":"Hitachi Washing Machine","slug":{"_type":"slug","current":"hitachi-washing-machine"},"price":15990000,"discount":5,"stock":8,"variant":"appliances","brand":{"_type":"reference","_ref":"brand-hitachi"},"categories":[{"_type":"reference","_ref":"cat-appliance"}]}

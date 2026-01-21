@@ -1,0 +1,131 @@
+[
+  {
+    "_type": "blog",
+    "title": "Top điện thoại thông minh đáng mua nhất năm 2026",
+    "slug": {
+      "_type": "slug",
+      "current": "top-dien-thoai-dang-mua-2026"
+    },
+    "author": "Admin",
+    "publishedAt": "2026-01-18T10:00:00.000Z",
+    "latest": true,
+    "content": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Thị trường smartphone năm 2026 chứng kiến sự cạnh tranh mạnh mẽ giữa các hãng lớn."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Các mẫu điện thoại cao cấp tập trung vào camera AI, màn hình OLED 120Hz và pin dung lượng lớn."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Người dùng nên cân nhắc nhu cầu sử dụng để lựa chọn sản phẩm phù hợp với ngân sách."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_type": "blog",
+    "title": "Cách chọn laptop phù hợp cho học tập và làm việc",
+    "slug": {
+      "_type": "slug",
+      "current": "cach-chon-laptop-hoc-tap-lam-viec"
+    },
+    "author": "Admin",
+    "publishedAt": "2026-01-17T09:30:00.000Z",
+    "latest": false,
+    "content": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Laptop là thiết bị không thể thiếu cho sinh viên và nhân viên văn phòng."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Cấu hình phù hợp bao gồm CPU thế hệ mới, RAM tối thiểu 16GB và ổ cứng SSD."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Ngoài ra, thời lượng pin và trọng lượng máy cũng là yếu tố quan trọng khi lựa chọn."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_type": "blog",
+    "title": "Phụ kiện công nghệ giúp nâng cao trải nghiệm sử dụng",
+    "slug": {
+      "_type": "slug",
+      "current": "phu-kien-cong-nghe-can-thiet"
+    },
+    "author": "Admin",
+    "publishedAt": "2026-01-16T08:45:00.000Z",
+    "latest": false,
+    "content": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Phụ kiện công nghệ giúp người dùng khai thác tối đa thiết bị điện tử."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Tai nghe không dây, sạc nhanh và bàn phím cơ đang là những sản phẩm được ưa chuộng."
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "Việc lựa chọn phụ kiện chính hãng giúp đảm bảo độ bền và an toàn khi sử dụng."
+          }
+        ]
+      }
+    ]
+  }
+]

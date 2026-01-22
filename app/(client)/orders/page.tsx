@@ -34,7 +34,7 @@ const OrdersPage = async () => {
                                 <Table>
                                     <TableHeader>
                                         <TableRow>
-                                            <TableHead className="w-[100px] md:w-auto">Mã đơn hàng</TableHead>
+                                            <TableHead className="w-25 md:w-auto">Mã đơn hàng</TableHead>
                                             <TableHead className='hidden md:table-cell'>Ngày đặt</TableHead>
                                             <TableHead>Khách hàng</TableHead>
                                             <TableHead className='hidden md:table-cell'>Email</TableHead>

@@ -60,21 +60,39 @@ const GET_ALL_BLOG = defineQuery(
     }
   }`
 );
-
-const SINGLE_BLOG_QUERY = defineQuery(
-  `*[_type == "blog" && slug.current == $slug][0]{
-    ...,
-    author->{
-      name,
-      image,
-    },
-    blogcategories[]->{
-      title,
-      "slug": slug.current,
-    },
-  }`
-);
-
+import { groq } from 'next-sanity'
+const SINGLE_BLOG_QUERY = groq`*[_type == "post" && slug.current == $slug][0]{
+  _id,
+  title,
+  slug,
+  mainImage,
+  publishedAt,
+  excerpt,
+  body,
+  author->{
+    name,
+    image
+  },
+  blogcategories[]->{
+    title
+  }
+}`
+export type SingleBlog = {
+  _id: string
+  title: string
+  slug: { current: string }
+  mainImage?: any // hoặc dùng SanityImage type nếu bạn có
+  publishedAt: string
+  excerpt?: string
+  body?: any, // PortableText block
+  author?: {
+    name: string
+    image?: any
+  }
+  blogcategories?: Array<{
+    title: string
+  }>
+}
 const OTHERS_BLOG_QUERY = defineQuery(`*[
   _type == "blog"
   && defined(slug.current)

@@ -13,7 +13,7 @@ import ProductSideMenu from "@/components/ProductSideMenu";
 
 const ProductCard = ({ product }: { product: Product }) => {
   return (
-    <div className="text-sm border-[1px] border-dark-blue/20 rounded-md bg-white group">
+    <div className="text-sm border border-dark-blue/20 rounded-md bg-white group">
       <div className="relative group overflow-hidden bg-shop_light_bg">
         {product?.images && (
           <Image

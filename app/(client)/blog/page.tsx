@@ -6,9 +6,21 @@ import dayjs from 'dayjs';
 import { Calendar } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+type Blog = {
+  _id: string;
+  title: string;
+  slug?: {
+    current: string;
+  };
+  publishedAt: string;
+  mainImage?: any;
+  blogcategories?: {
+    title: string;
+  }[];
+};
 
 const BlogPage = async () => {
-    const blogs = await getAllBlogs(6);
+    const blogs = await getAllBlogs(6) as Blog[];
     return (
         <div>
             <Container>
@@ -30,7 +42,7 @@ const BlogPage = async () => {
                             <div className="bg-white p-5">
                                 <div className="text-xs flex items-center gap-5">
                                     <div className="flex items-center relative group cursor-pointer">
-                                        {blog?.blogcategories?.map((item: any, index: number) => (
+                                        {blog?.blogcategories?.map((item, index: number) => (
                                             <p
                                                 key={index}
                                                 className="font-semibold text-shop_dark_green tracking-wider"
@@ -42,7 +54,7 @@ const BlogPage = async () => {
                                     <p className="flex items-center gap-1 text-lightColor relative group hover:cursor-pointer hover:text-shop_dark_green hoverEffect">
                                         <Calendar size={15} />
                                         {dayjs(blog?.publishedAt).format("MMMM D, YYYY")}
-                                        <span className="absolute left-0 -bottom-1.5 bg-lightColor/30 inline-block w-full h-[2px] group-hover:bg-shop_dark_green hoverEffect" />
+                                        <span className="absolute left-0 -bottom-1.5 bg-lightColor/30 inline-block w-full h-0.5 group-hover:bg-shop_dark_green hoverEffect" />
                                     </p>
                                 </div>
                                 <Link

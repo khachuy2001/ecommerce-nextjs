@@ -5,7 +5,7 @@ import BrandList from "@/components/shop/BrandList";
 import CategoryList from "@/components/shop/CategoryList";
 import PriceList from "@/components/shop/PriceList";
 import { Title } from "@/components/Title";
-import { BRANDS_QUERYResult, Category, Product } from "@/sanity.types";
+import { BRANDS_QUERY_RESULT, Category, Product } from "@/sanity.types";
 import { client } from "@/sanity/lib/client";
 import { Loader2 } from "lucide-react";
 import { useSearchParams } from "next/navigation";
@@ -14,7 +14,7 @@ import NoProductAvailable from "@/components/NoProductAvailable";
 
 interface Props {
   categories: Category[];
-  brands: BRANDS_QUERYResult;
+  brands: BRANDS_QUERY_RESULT;
 }
 
 const Shop = ({ categories, brands }: Props) => {

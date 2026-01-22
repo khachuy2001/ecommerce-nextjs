@@ -22,7 +22,7 @@ const SuccessPage = () => {
     }, [session_id, resetCart]);
 
     return (
-        <div className="py-5 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center mx-4 min-h-screen">
+        <div className="py-5 bg-linear-to-br from-gray-50 to-gray-100 flex items-center justify-center mx-4 min-h-screen">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -88,4 +88,12 @@ const SuccessPage = () => {
     );
 };
 
-export default SuccessPage;
+import { Suspense } from "react";
+
+export default function SuccessPageWithSuspense(props: any) {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <SuccessPage {...props} />
+        </Suspense>
+    );
+}

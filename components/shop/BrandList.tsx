@@ -1,10 +1,10 @@
 import { Title } from "@/components/Title";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { BRANDS_QUERYResult } from "@/sanity.types";
+import { BRANDS_QUERY_RESULT } from "@/sanity.types";
 import React from "react";
 interface Props {
-  brands: BRANDS_QUERYResult;
+  brands: BRANDS_QUERY_RESULT;
   selectedBrand: string | null;
   setSelectedBrand: React.Dispatch<React.SetStateAction<string | null>>;
 }
@@ -28,14 +28,14 @@ const BrandList = ({ brands, selectedBrand, setSelectedBrand }: Props) => {
               htmlFor={brand?.slug?.current ?? brand?._id}
               className={`${selectedBrand === (brand?.slug?.current ?? brand?._id) ? "font-bold text-black" : "text-gray-600"}`}
             >
-              {brand?.title ?? brand?.name}
+              {brand?.title}
             </Label>
           </div>
         ))}
         {selectedBrand && (
           <button
             onClick={() => setSelectedBrand(null)}
-            className="text-sm font-medium mt-2 underline underline-offset-2 decoration-[1px] hover:text-shop_dark_green hoverEffect text-left"
+            className="text-sm font-medium mt-2 underline underline-offset-2 decoration-1 hover:text-shop_dark_green hoverEffect text-left"
           >
             Reset selection
           </button>

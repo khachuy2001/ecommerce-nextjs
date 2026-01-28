@@ -15,12 +15,14 @@ export const quickLinksData = [
   { title: "Hỗ trợ", href: "/help" },
 ];
 export const categoriesData = [
-  { title: "Điện thoại di động", href: "dien-thoai" },
-  { title: "Thiết bị gia dụng", href: "thiet-bi-gia-dung" },
   { title: "Thiết bị điện tử", href: "thiet-bi-dien-tu" },
+  { title: "Điện thoại di động", href: "dien-thoai-di-dong" },
+  { title: "Máy tính bảng", href: "may-tinh-bang" },
+  { title: "Màn hình", href: "man-hinh" },
+  { title: "Thiết bị nhà bếp", href: "thiet-bi-nha-bep" },
+  { title: "Tủ lạnh", href: "tu-lanh" },
   { title: "Máy giặt", href: "may-giat" },
-  { title: "Đồ dùng nhà bếp", href: "do-dung-nha-bep" },
-  { title: "Phụ kiện công nghệ", href: "phu-kien-cong-nghe" },
+  { title: "Phụ kiện tiện ích", href: "phu-kien-tien-ich" },
   { title: "Khác", href: "khac" },
 ];
 
@@ -28,5 +30,7 @@ export const productType = [
   { title: "Thiết bị công nghệ", value: "gadget" },
   { title: "Thiết bị gia dụng", value: "appliances" },
   { title: "Tủ lạnh", value: "refrigerators" },
+  { title: "Máy tính bảng", value: "tablet" },
+  { title: "Máy giặt", value: "washing_machine" },
   { title: "Khác", value: "others" },
 ];

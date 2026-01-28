@@ -83,10 +83,12 @@ export const productType = defineType({
       type: "string",
       options: {
         list: [
-          { title: "Gadget", value: "gadget" },
-          { title: "Appliances", value: "appliances" },
-          { title: "Refrigerators", value: "refrigerators" },
-          { title: "Others", value: "others" },
+          { title: "Tiện ích", value: "gadget" },
+          { title: "Thiết bị gia dụng", value: "appliances" },
+          { title: "Tủ lạnh", value: "refrigerators" },
+          { title: "Máy tính bảng", value: "tablet" },
+          { title: "Máy giặt", value: "washing_machine" },
+          { title: "Khác", value: "others" },
         ],
       },
     }),

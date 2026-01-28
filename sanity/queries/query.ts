@@ -43,17 +43,17 @@ const BRAND_QUERY =
   "brandName": brand->title
 }`);
 
-const MY_ORDERS_QUERY =
-  defineQuery(`
-    *[_type == "order" && clerkUserId == $userId]
-    | order(_createdAt desc){
-      ...,
-      products[]{
+  const MY_ORDERS_QUERY =
+    defineQuery(`
+      *[_type == "order" && clerkUserId == $userId]
+      | order(_createdAt desc){
         ...,
-        product->
+        products[]{
+          ...,
+          product->
+        }
       }
-    }
-  `);
+    `);
 const GET_ALL_BLOG = defineQuery(
   `*[_type == 'blog'] | order(publishedAt desc)[0...$quantity]{
     ...,

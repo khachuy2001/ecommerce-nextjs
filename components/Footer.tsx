@@ -27,7 +27,7 @@ const Footer = () => {
             />
           </div>
           <div>
-            <SubTitle>Quick Links</SubTitle>
+            <SubTitle>Liên kết nhanh</SubTitle>
             <ul className="space-y-3 mt-4">
               {quickLinksData?.map((item) => (
                 <li key={item?.title}>

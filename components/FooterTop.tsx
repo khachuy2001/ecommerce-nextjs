@@ -11,14 +11,14 @@ interface ContactItemData {
 const data: ContactItemData[] = [
   {
     title: "Địa chỉ",
-    subtitle: "123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh",
+    subtitle: "123 Nguyễn Văn A, Quận 1, TP.HCM",
     icon: (
       <MapPin className="h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" />
     ),
   },
   {
     title: "Liên hệ",
-    subtitle: "+84 958 648 597",
+    subtitle: "1900 1234",
     icon: (
       <Phone className="h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" />
     ),

@@ -3,7 +3,6 @@
 import { Address } from "@/sanity.types";
 import { CartItem } from "@/store";
 import stripe from "@/lib/stripe";
-import Stripe from "stripe";
 import { urlFor } from "@/sanity/lib/image";
 
 export interface Metadata {
